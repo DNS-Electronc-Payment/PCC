@@ -20,14 +20,14 @@ public class BankCommunicationController {
     private APIClient apiClient;
 
     @PostMapping("/bankRequest")
-    public void recieveBankRequest(@Valid @RequestBody BankRequest bankRequest){
+    public void recieveBankRequest( @RequestBody BankRequest bankRequest){
 
        apiClient.forwardBankRequest(bankRequest);
 
     }
 
     @PostMapping("/transactionResult")
-    public void recieveTransactionResult(@Valid @RequestBody  TransactionResult transactionResult){
+    public void recieveTransactionResult( @RequestBody  TransactionResult transactionResult){
 
        apiClient.forwardTransactionResult(transactionResult);
 

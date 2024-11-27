@@ -12,15 +12,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class TransactionResult {
 
-    @NotEmpty(message = "Field transactionResult "+ " cannot be empty")
     private TransactionStatus transactionResult;
-    @NotEmpty(message = "Field acquirerOrderId"+ " cannot be empty")
     private String acquirerOrderId;
-    @NotEmpty(message = "Field acquirerTimestamp"+ " cannot be empty")
     private String acquirerTimestamp;
-    @NotEmpty(message = "Field issuerOrderId"+ " cannot be empty")
     private String issuerOrderId;
-    @NotEmpty(message = "Field issuerTimestamp"+ " cannot be empty")
     private String issuerTimestamp;
 
 }
